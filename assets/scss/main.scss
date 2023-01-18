@@ -1,11 +1,11 @@
 /* ****************** Varibale Farben ****************/
 
 $farbe___schwarz: #0b0c17;
-$frabe___schwarz000:#000;
-$farbe___rot:#ff3571;
-$farbe___grau:#dddddd;
-$farbe___blau:#3c30ff;
-$farbe___weiß:#fff;
+$frabe___schwarz000: #000;
+$farbe___rot: #ff3571;
+$farbe___grau: #dddddd;
+$farbe___blau: #3c30ff;
+$farbe___weiß: #fff;
 
 
 /* ******************* einbinden Font-Family Robot ************* */
@@ -41,64 +41,68 @@ font-family: 'schriftDick', sans-serif;
 
 
 /* ***********************+ html ********************* */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
-   max-width: 340px;
-   font-size: 16px;
-   scroll-behavior: smooth;
+html,
+body {
+    max-width: 340px;
+    /*  * wegen Mobile First */
+    font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 
 
 /* ********************** Schriften und Farben  vordefinieren ************ */
-h1{
+h1 {
     font-family: 'schriftDick', sans-serif;
-    color:$farbe___schwarz
-
+    color: $farbe___schwarz;
+    font-size: 2rem;
 }
 
-h2{
+h2 {
     font-family: 'schriftDick', sans-serif;
     color: $farbe___schwarz;
 }
 
 /* ************************ Zahlen bei Bilder 01 02 03 usw  */
-h3{
+h3 {
     font-family: 'schriftDick', sans-serif;
-color: $farbe___grau;
+    color: $farbe___grau;
 }
 
-h4,h5,h6{
+h4,
+h5,
+h6 {
     font-family: 'schriftNormal', sans-serif;
     color: $farbe___schwarz;
 }
 
-p{
+p {
     font-family: 'schriftDuenn', sans-serif;
     color: $farbe___schwarz;
+    font-size: 1rem;
 }
 
-a{
+a {
     font-family: 'schriftDuenn', sans-serif;
-color: $farbe___rot;
+    color: $farbe___rot;
 }
 
 
 /* ***************  icons    und    images   begrenzen   ******************* */
 /* *damit es am Anfang nicht vormat zerschieißt, müssen nochmal unten nachgearbeitet werden */
-.img_icon{
-    max-width: 30px;
+.img_icon {
+    max-width: 20px;
     background-color: yellowgreen;
 }
 
-.img_bild{
+.img_bild {
     max-width: 300px;
-    background-color: yellowgreen;
 }
 
 
@@ -110,6 +114,58 @@ color: $farbe___rot;
 /* ************************** header ************************ */
 /* ************************** header ************************ */
 
-header{
-background-image: url("../img/ilustracion1.png");
+header {
+    margin-bottom: 2vh;         /*  * Abstand zu a tag */
+    display: block;              /* * Bei Desktop Ansicht in Media Querries immer auf flex umstellen */
+
+    section:nth-of-type(1) {
+        background-color: red;
+
+        >article:nth-of-type(1) {
+            background-color: aqua;
+            display: flex;              /* * Elefant und Texte nebeneinander */
+            padding-top: 1vh;           /* * Abstand nach oben zum Rand  */
+            padding-left: 1vw;          /* * Abstand nach links zum Rand */
+
+            article {
+                background-color: yellow;
+                padding-left: 2vw;          /* * Abstand zu icon Elefant */
+
+                p{
+                    font-size: 0.6rem;      /* * Unter Zeile kleiner machen */
+                }
+            }
+
+        }
+        >article:nth-of-type(2) {
+            background-color: lightcoral;
+            padding-top: 5vh;               /* * Abstand zu Elefant oben */
+            text-align: center;
+
+            h1 {
+                background-color: violet;
+                margin-bottom: 1vh;
+            }
+
+        }
+
+    
+    }
+    section:nth-of-type(2){
+        background-color: orange;
+        margin-top: 5vh;                /* * Mobile  Abstand nach oben zu p */
+        
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    img {
+        background-image: url("/assets/img/ilustracion1_wolke.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 120%;
+    }
 }
