@@ -209,6 +209,7 @@ header section:nth-of-type(2) img {
   display: flex;
   flex-wrap: wrap;
   text-align: center; /* * richtet Text Icos usw Mittig aus bei Mobile */
+  /* ***************    section 4er B ___  1  te links oben    ********** */
 }
 .section_vierErBlockAlternativGrid > section {
   background-color: aqua;
@@ -222,7 +223,12 @@ header section:nth-of-type(2) img {
   background-color: yellow;
 }
 .section_vierErBlockAlternativGrid > section article:nth-of-type(2) h4 {
-  margin: 1vh 0;
+  margin: 1vh 0; /* * für Mobile Abstand oben zu Icon und unten zu p  */
+}
+
+/* ********************    section Text ___ Are you ready    ********** */
+.section_textAreYouReady {
+  background-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

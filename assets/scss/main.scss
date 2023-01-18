@@ -274,6 +274,8 @@ header {
     flex-wrap: wrap;        
     text-align: center;                     /* * richtet Text Icos usw Mittig aus bei Mobile */
 
+
+    /* ***************    section 4er B ___  1  te links oben    ********** */
     >section{
         background-color:aqua;
          padding: 3vh;                         /* * Abstand oben unten links rechts 3vh  */
@@ -288,9 +290,17 @@ header {
             background-color:yellow;
 
             h4{
-                margin: 1vh 0;
+                margin: 1vh 0;                  /* * für Mobile Abstand oben zu Icon und unten zu p  */
             }
         }
 
     }
+}
+
+
+
+
+/* ********************    section Text ___ Are you ready    ********** */
+.section_textAreYouReady{
+    background-color: red;
 }
