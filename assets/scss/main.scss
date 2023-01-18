@@ -146,7 +146,7 @@ header {
 
         /* ************************ Text links unten ___ mit h1   ******** */
         >article:nth-of-type(2) {
-            background-color: lightcoral;
+            background-color: yellow;
             padding-top: 5vh;
             /* * Abstand zu Elefant oben */
             text-align: center;
@@ -189,7 +189,7 @@ header {
             max-width: 100%;
             /* * 100% oder in Mobile 340px max-width */
 
-/*             Animation
+            /*             Animation
             transform: translateY(-100px);
             transition: 2s ease-in ;
  */
@@ -486,8 +486,81 @@ footer {
 /* ************************** media querrie ************************ */
 
 @media only screen and (min-width: 1440px) {
-    html, body {
+
+    html,
+    body {
         max-width: 1440px;
     }
-}
+
+    header {
+        display: flex;
+
+        section:nth-of-type(1) {
+            background-color: rgb(182, 69, 69);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 0.5rem;
+            padding-top: 2vh;
+            padding-left: 2vw;
+        }
+    }
+
+    /* ************************* Text links oben ___ mit Elefant ******** */
+
+    header section:nth-of-type(1)>article:nth-of-type(1) article {
+        background-color:rgb(229, 229, 167);
+        padding-left: 0.5vw;
+
+        h5{
+            font-size: clamp(0.8rem, 10vw, 1.2rem);
+        }
+
+        p{
+            font-size: clamp(0.6rem, 10vw, 0.9rem);
+        }
+    }
+
+
+
+
+
+
+
+    /* ************************ Text links unten ___ mit h1   ******** */
+
+
+
+
+
     
+
+
+
+
+    /* ************************ 2x Bilder Überblenden ___ Wolke + people ***** */
+
+    header section:nth-of-type(2) {
+        background-color: rgb(161, 112, 21);
+        margin-top: 0vh;
+        max-width: 60%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* **** Ende */
+}
