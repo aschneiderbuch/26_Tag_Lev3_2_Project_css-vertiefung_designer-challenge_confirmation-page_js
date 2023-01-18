@@ -24,8 +24,49 @@ dick
 font-family: 'schriftDick', sans-serif;
 
 */
+/* ***********************+ html ********************* */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 144px;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+/* ********************** Schriften und Farben  vordefinieren ************ */
 h1 {
   font-family: "schriftDick", sans-serif;
+  color: #0b0c17;
+}
+
+h2 {
+  font-family: "schriftDick", sans-serif;
+  color: #0b0c17;
+}
+
+/* ************************ Zahlen bei Bilder 01 02 03 usw  */
+h3 {
+  font-family: "schriftDick", sans-serif;
+  color: #dddddd;
+}
+
+h4, h5, h6 {
+  font-family: "schriftNormal", sans-serif;
+  color: #0b0c17;
+}
+
+p {
+  font-family: "schriftDuenn", sans-serif;
+  color: #0b0c17;
+}
+
+a {
+  font-family: "schriftDuenn", sans-serif;
+  color: #ff3571;
 }
 
 /*# sourceMappingURL=style.css.map */

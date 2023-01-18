@@ -37,7 +37,53 @@ font-family: 'schriftDick', sans-serif;
 
 */
 
+
+
+
+/* ***********************+ html ********************* */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+   max-width: 144px;
+   font-size: 16px;
+   scroll-behavior: smooth;
+}
+
+
+
+/* ********************** Schriften und Farben  vordefinieren ************ */
 h1{
     font-family: 'schriftDick', sans-serif;
+    color:$farbe___schwarz
 
+}
+
+h2{
+    font-family: 'schriftDick', sans-serif;
+    color: $farbe___schwarz;
+}
+
+/* ************************ Zahlen bei Bilder 01 02 03 usw  */
+h3{
+    font-family: 'schriftDick', sans-serif;
+color: $farbe___grau;
+}
+
+h4,h5,h6{
+    font-family: 'schriftNormal', sans-serif;
+    color: $farbe___schwarz;
+}
+
+p{
+    font-family: 'schriftDuenn', sans-serif;
+    color: $farbe___schwarz;
+}
+
+a{
+    font-family: 'schriftDuenn', sans-serif;
+color: $farbe___rot;
 }
