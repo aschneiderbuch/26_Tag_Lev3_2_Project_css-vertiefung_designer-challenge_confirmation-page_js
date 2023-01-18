@@ -69,4 +69,16 @@ a {
   color: #ff3571;
 }
 
+/* ***************  icons    und    images   begrenzen   ******************* */
+/* *damit es am Anfang nicht vormat zerschieißt, müssen nochmal unten nachgearbeitet werden */
+.img_icon {
+  max-width: 30px;
+  background-color: yellowgreen;
+}
+
+.img_bild {
+  max-width: 300px;
+  background-color: yellowgreen;
+}
+
 /*# sourceMappingURL=style.css.map */
