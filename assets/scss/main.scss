@@ -188,6 +188,14 @@ header {
             background-size: cover;
             max-width: 100%;
             /* * 100% oder in Mobile 340px max-width */
+
+/*             Animation
+            transform: translateY(-100px);
+            transition: 2s ease-in ;
+ */
+
+
+
         }
     }
 }
@@ -465,11 +473,21 @@ footer {
             margin-top: -1vh;
             /* * damit Herz auf einer Linie mit p */
         }
-
-
     }
-
-
-
-
 }
+
+
+
+
+
+
+/* ************************** media querrie ************************ */
+/* ************************** media querrie ************************ */
+/* ************************** media querrie ************************ */
+
+@media only screen and (min-width: 1440px) {
+    html, body {
+        max-width: 1440px;
+    }
+}
+    
