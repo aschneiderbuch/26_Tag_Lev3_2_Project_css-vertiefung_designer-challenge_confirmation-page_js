@@ -203,4 +203,26 @@ header section:nth-of-type(2) img {
   margin: 0 auto 2vh; /* Mittig und 2vh nach unten  */
 }
 
+/* ********************    section 4er Block alternativ Grid    ********** */
+.section_vierErBlockAlternativGrid {
+  background-color: orange;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center; /* * richtet Text Icos usw Mittig aus bei Mobile */
+}
+.section_vierErBlockAlternativGrid > section {
+  background-color: aqua;
+  padding: 3vh; /* * Abstand oben unten links rechts 3vh  */
+  display: block; /* Vorsicht bei flex verschwinden Icons */
+}
+.section_vierErBlockAlternativGrid > section article:nth-of-type(1) {
+  background-color: red; /* * Icons  */
+}
+.section_vierErBlockAlternativGrid > section article:nth-of-type(2) {
+  background-color: yellow;
+}
+.section_vierErBlockAlternativGrid > section article:nth-of-type(2) h4 {
+  margin: 1vh 0;
+}
+
 /*# sourceMappingURL=style.css.map */

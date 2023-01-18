@@ -255,11 +255,42 @@ header {
 /* ********************    section h2 ___ After    ********** */
 .section_h2After {
     background-color: red;
-    
+
      h2 {
         background-color: aqua;
         width: 50%;
         text-align: center;
         margin: 0 auto 2vh;              /* Mittig und 2vh nach unten  */  
      }
+}
+
+
+
+
+/* ********************    section 4er Block alternativ Grid    ********** */
+.section_vierErBlockAlternativGrid {
+    background-color: orange;
+    display: flex;         
+    flex-wrap: wrap;        
+    text-align: center;                     /* * richtet Text Icos usw Mittig aus bei Mobile */
+
+    >section{
+        background-color:aqua;
+         padding: 3vh;                         /* * Abstand oben unten links rechts 3vh  */
+    
+        display: block;                       /* Vorsicht bei flex verschwinden Icons */
+
+        article:nth-of-type(1){
+            background-color: red;          /* * Icons  */
+        }
+
+        article:nth-of-type(2){
+            background-color:yellow;
+
+            h4{
+                margin: 1vh 0;
+            }
+        }
+
+    }
 }
