@@ -276,7 +276,11 @@ header section:nth-of-type(2) img {
 .section_block01bis04 section > article:nth-of-type(2) {
   background-color: violet;
   order: 1;
-  padding: 2vh 2vh 2vh 2vh; /* * Abstand zu Bild und zu Rand */
+  /* * evtl. dann einfach class order im
+  html direkt vergeben ;-) bevor man 
+  hier jedes ... nth-type usw. richtig anspricht */
+  padding: 2vh 2vh 2vh 2vh;
+  /* * Abstand zu Bild und zu Rand */
   /* *******   icon */
   /* ***** text */
 }
@@ -291,9 +295,68 @@ header section:nth-of-type(2) img {
 }
 .section_block01bis04 section > article:nth-of-type(2) > article:nth-of-type(2) h4 {
   background-color: orange;
-  margin-top: 2vh; /* * Abstand zu Nummer 01 nach oben */
-  margin-bottom: 2vh; /* * Abstand zu text p */
+  margin-top: 2vh;
+  /* * Abstand zu Nummer 01 nach oben */
+  margin-bottom: 2vh;
+  /* * Abstand zu text p */
   font-size: 1.6rem;
+}
+
+/* ************************** footer ************************ */
+/* ************************** footer ************************ */
+/* ************************** footer ************************ */
+footer {
+  background-color: red;
+  text-align: center;
+  padding-top: 3vh;
+  /* *Abstand zu Main */
+  padding-bottom: 1vh;
+  /* * Abstand zu Ende */
+  /* ******* Herz + Text */
+}
+footer p {
+  background-color: aqua;
+  margin-top: 1vh;
+  /*  * Abstand zu h2 drüber */
+  margin-bottom: 2vh;
+  /* * Abstand zu Buttons drunter */
+}
+footer form {
+  background-color: violet;
+  display: flex;
+  /* * dadurch Text bzw. Buttons mittig übereinander */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  width: 50%;
+  margin: 0 auto;
+  /*  * durch auto ganze Container Mittig ausrichten */
+  /* ***** input */
+}
+footer form article:nth-of-type(1) {
+  background-color: orange;
+}
+footer article:nth-of-type(2) {
+  background-color: orange;
+  display: flex;
+  /* * damit Herz hinten */
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+}
+footer article:nth-of-type(2) p {
+  background-color: yellow;
+  font-size: 0.55rem;
+}
+footer article:nth-of-type(2) > img {
+  background-color: greenyellow;
+  max-width: 20px;
+  object-fit: scale-down;
+  /* * damit Icon klein ohne Verzerrung wird */
+  margin-top: -1vh;
+  /* * damit Herz auf einer Linie mit p */
 }
 
 /*# sourceMappingURL=style.css.map */
