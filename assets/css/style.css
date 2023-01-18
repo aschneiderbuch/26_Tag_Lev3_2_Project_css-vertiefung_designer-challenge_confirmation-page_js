@@ -73,6 +73,7 @@ p {
 a {
   font-family: "schriftDuenn", sans-serif;
   color: #ff3571;
+  font-size: 0.5rem;
 }
 
 /* ***************  icons    und    images   begrenzen   ******************* */
@@ -83,35 +84,44 @@ a {
 }
 
 .img_bild {
-  max-width: 300px;
+  max-width: 200px;
 }
 
 /* ************************** header ************************ */
 /* ************************** header ************************ */
 /* ************************** header ************************ */
 header {
-  margin-bottom: 2vh; /*  * Abstand zu a tag */
-  display: block; /* * Bei Desktop Ansicht in Media Querries immer auf flex umstellen */
+  display: block;
+  /* * Bei Desktop Ansicht in Media Querries immer auf flex umstellen */
+  /* ************************ 2x Bilder Überblenden ___ Wolke + people ***** */
 }
 header section:nth-of-type(1) {
   background-color: red;
+  /* ************************* Text links oben ___ mit Elefant ******** */
+  /* ************************ Text links unten ___ mit h1   ******** */
 }
 header section:nth-of-type(1) > article:nth-of-type(1) {
   background-color: aqua;
-  display: flex; /* * Elefant und Texte nebeneinander */
-  padding-top: 1vh; /* * Abstand nach oben zum Rand  */
-  padding-left: 1vw; /* * Abstand nach links zum Rand */
+  display: flex;
+  /* * Elefant und Texte nebeneinander */
+  padding-top: 1vh;
+  /* * Abstand nach oben zum Rand  */
+  padding-left: 1vw;
+  /* * Abstand nach links zum Rand */
 }
 header section:nth-of-type(1) > article:nth-of-type(1) article {
   background-color: yellow;
-  padding-left: 2vw; /* * Abstand zu icon Elefant */
+  padding-left: 2vw;
+  /* * Abstand zu icon Elefant */
 }
 header section:nth-of-type(1) > article:nth-of-type(1) article p {
-  font-size: 0.6rem; /* * Unter Zeile kleiner machen */
+  font-size: 0.6rem;
+  /* * Unter Zeile kleiner machen */
 }
 header section:nth-of-type(1) > article:nth-of-type(2) {
   background-color: lightcoral;
-  padding-top: 5vh; /* * Abstand zu Elefant oben */
+  padding-top: 5vh;
+  /* * Abstand zu Elefant oben */
   text-align: center;
 }
 header section:nth-of-type(1) > article:nth-of-type(2) h1 {
@@ -120,18 +130,42 @@ header section:nth-of-type(1) > article:nth-of-type(2) h1 {
 }
 header section:nth-of-type(2) {
   background-color: orange;
-  margin-top: 5vh; /* * Mobile  Abstand nach oben zu p */
+  margin-top: 5vh;
+  /* * Mobile  Abstand nach oben zu p */
   max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header img {
+header section:nth-of-type(2) img {
   background-image: url("/assets/img/ilustracion1_wolke.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 120%;
+  max-width: 100%;
+  /* * 100% oder in Mobile 340px max-width */
+}
+
+/* ************************** main ************************ */
+/* ************************** main ************************ */
+/* ************************** main ************************ */
+/* ********************    section a tag  ___ scroll    ********** */
+.section_a___style {
+  margin-top: 2vh;
+  /* * Abstand zum header */
+  margin-bottom: 4vh;
+  /* * Abstand zum Bild mit der BilderGallery */
+}
+.section_a___style a {
+  text-decoration: none;
+}
+
+/* ********************    section bild img Gallery    ********** */
+.section_bildGallery {
+  background-color: red;
+}
+.section_bildGallery > img {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
