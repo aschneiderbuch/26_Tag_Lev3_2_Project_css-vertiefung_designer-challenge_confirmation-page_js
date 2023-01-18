@@ -32,7 +32,7 @@ font-family: 'schriftDick', sans-serif;
 }
 
 html, body {
-  max-width: 144px;
+  max-width: 340px;
   font-size: 16px;
   scroll-behavior: smooth;
 }
