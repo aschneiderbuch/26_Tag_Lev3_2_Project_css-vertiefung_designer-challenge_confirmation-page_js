@@ -99,7 +99,6 @@ a {
 /* *damit es am Anfang nicht vormat zerschieißt, müssen nochmal unten nachgearbeitet werden */
 .img_icon {
     max-width: 20px;
-    background-color: yellowgreen;
 }
 
 .img_bild {
@@ -157,6 +156,13 @@ header {
                 margin-bottom: 1vh;
             }
 
+            p {
+                background-color: green;
+                margin-left: 2vw;
+                /* * Abstand Mobile links rechts, damit Schrift nicht bis an Rand geht bei  */
+                margin-right: 2vw;
+            }
+
         }
 
 
@@ -198,14 +204,18 @@ header {
 .section_a___style {
     margin-top: 2vh;
     /* * Abstand zum header */
-    ;
+
     margin-bottom: 4vh;
     /* * Abstand zum Bild mit der BilderGallery */
+    padding-left: 3vw;
 
     a {
         text-decoration: none;
     }
 }
+
+
+
 
 /* ********************    section bild img Gallery    ********** */
 .section_bildGallery {
@@ -214,4 +224,42 @@ header {
     >img {
         max-width: 100%;
     }
+}
+
+
+
+
+/* ********************    section Text ___ Every    ********** */
+.section_textEvery {
+    background-color: orange;
+    display: block; 
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-left: 3vw;
+    padding-right: 2vw;
+
+
+    article {
+        background-color: aqua;
+        width: 50%;
+        text-align: center;
+        margin: 0 auto 2vh;
+        /*  2vh Abstand nach unten zu p */
+        /* * evtl. auto abändern bei Desktop */
+    }
+}
+
+
+
+
+/* ********************    section h2 ___ After    ********** */
+.section_h2After {
+    background-color: red;
+    
+     h2 {
+        background-color: aqua;
+        width: 50%;
+        text-align: center;
+        margin: 0 auto 2vh;              /* Mittig und 2vh nach unten  */  
+     }
 }
