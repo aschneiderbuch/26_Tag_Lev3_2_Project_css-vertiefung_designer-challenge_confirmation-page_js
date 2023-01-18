@@ -175,6 +175,7 @@ header section:nth-of-type(2) img {
 }
 
 /* ********************    section Text ___ Every    ********** */
+/* *** Vorsicht  section_textAreYouReady bekommt gleichen Style */
 .section_textEvery {
   background-color: orange;
   display: block;
@@ -200,7 +201,8 @@ header section:nth-of-type(2) img {
   background-color: aqua;
   width: 50%;
   text-align: center;
-  margin: 0 auto 2vh; /* Mittig und 2vh nach unten  */
+  margin: 0 auto 2vh;
+  /* Mittig und 2vh nach unten  */
 }
 
 /* ********************    section 4er Block alternativ Grid    ********** */
@@ -208,27 +210,89 @@ header section:nth-of-type(2) img {
   background-color: orange;
   display: flex;
   flex-wrap: wrap;
-  text-align: center; /* * richtet Text Icos usw Mittig aus bei Mobile */
+  text-align: center;
+  /* * richtet Text Icos usw Mittig aus bei Mobile */
   /* ***************    section 4er B ___  1  te links oben    ********** */
 }
 .section_vierErBlockAlternativGrid > section {
   background-color: aqua;
-  padding: 3vh; /* * Abstand oben unten links rechts 3vh  */
-  display: block; /* Vorsicht bei flex verschwinden Icons */
+  padding: 3vh;
+  /* * Abstand oben unten links rechts 3vh  */
+  display: block;
+  /* Vorsicht bei flex verschwinden Icons */
 }
 .section_vierErBlockAlternativGrid > section article:nth-of-type(1) {
-  background-color: red; /* * Icons  */
+  background-color: red;
+  /* * Icons  */
 }
 .section_vierErBlockAlternativGrid > section article:nth-of-type(2) {
   background-color: yellow;
 }
 .section_vierErBlockAlternativGrid > section article:nth-of-type(2) h4 {
-  margin: 1vh 0; /* * für Mobile Abstand oben zu Icon und unten zu p  */
+  margin: 1vh 0;
+  /* * für Mobile Abstand oben zu Icon und unten zu p  */
 }
 
 /* ********************    section Text ___ Are you ready    ********** */
+/* *** Vorsicht bekommt Style von    section_textEvery ***** */
 .section_textAreYouReady {
   background-color: red;
+}
+
+/* ********************    section Block 01 bis 04    ********** */
+.section_block01bis04 {
+  background-color: orange;
+  display: flex;
+  /* * richtet 01 bis 04 im flex aus */
+  flex-wrap: wrap;
+  text-align: center;
+  /* * text Icons usw. Mittig ausrichten */
+  padding-top: 2vh;
+  /* * Abstand zu text Are you Ready */
+  padding-bottom: 2vh;
+  /* * Abstand zu Footer */
+  /* ********************    section 01 von 04 Rakete  Bild Text  ___ order    ********** */
+}
+.section_block01bis04 section {
+  background-color: yellow;
+  display: block;
+  /*  * Bei Deskop umstellen - 
+   richtet Bilder und Text aus */
+  /* ******* große Bild */
+  /* *******   01-04 usw + icon */
+}
+.section_block01bis04 section > article:nth-of-type(1) {
+  background-color: aqua;
+  order: 1;
+  /* * Order wird für Desktop gebraucht, 
+  da soll ja Bild text Reihenfolge bei jedem ten wechseln */
+  /* *  die > bei img und article werden gebraucht, das die icons nicht mit angesprochen werden */
+}
+.section_block01bis04 section > article:nth-of-type(1) > img {
+  background-color: yellowgreen;
+  max-width: 100%;
+  /* * hebt default einstellung von oben auf  */
+}
+.section_block01bis04 section > article:nth-of-type(2) {
+  background-color: violet;
+  order: 1;
+  padding: 2vh 2vh 2vh 2vh; /* * Abstand zu Bild und zu Rand */
+  /* *******   icon */
+}
+.section_block01bis04 section > article:nth-of-type(2) > article:nth-of-type(1) {
+  background-color: yellow;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+}
+.section_block01bis04 section > article:nth-of-type(2) > article:nth-of-type(2) {
+  background-color: yellowgreen;
+}
+.section_block01bis04 section > article:nth-of-type(2) > article:nth-of-type(2) h4 {
+  background-color: orange;
+  margin-top: 2vh; /* * Abstand zu Nummer 01 nach oben */
+  margin-bottom: 2vh; /* * Abstand zu text p */
+  font-size: 1.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

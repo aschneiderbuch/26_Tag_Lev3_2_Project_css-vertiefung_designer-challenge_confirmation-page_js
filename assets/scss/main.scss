@@ -230,9 +230,10 @@ header {
 
 
 /* ********************    section Text ___ Every    ********** */
+/* *** Vorsicht  section_textAreYouReady bekommt gleichen Style */
 .section_textEvery {
     background-color: orange;
-    display: block; 
+    display: block;
     padding-top: 3vh;
     padding-bottom: 3vh;
     padding-left: 3vw;
@@ -256,12 +257,13 @@ header {
 .section_h2After {
     background-color: red;
 
-     h2 {
+    h2 {
         background-color: aqua;
         width: 50%;
         text-align: center;
-        margin: 0 auto 2vh;              /* Mittig und 2vh nach unten  */  
-     }
+        margin: 0 auto 2vh;
+        /* Mittig und 2vh nach unten  */
+    }
 }
 
 
@@ -270,27 +272,32 @@ header {
 /* ********************    section 4er Block alternativ Grid    ********** */
 .section_vierErBlockAlternativGrid {
     background-color: orange;
-    display: flex;         
-    flex-wrap: wrap;        
-    text-align: center;                     /* * richtet Text Icos usw Mittig aus bei Mobile */
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    /* * richtet Text Icos usw Mittig aus bei Mobile */
 
 
     /* ***************    section 4er B ___  1  te links oben    ********** */
-    >section{
-        background-color:aqua;
-         padding: 3vh;                         /* * Abstand oben unten links rechts 3vh  */
-    
-        display: block;                       /* Vorsicht bei flex verschwinden Icons */
+    >section {
+        background-color: aqua;
+        padding: 3vh;
+        /* * Abstand oben unten links rechts 3vh  */
 
-        article:nth-of-type(1){
-            background-color: red;          /* * Icons  */
+        display: block;
+        /* Vorsicht bei flex verschwinden Icons */
+
+        article:nth-of-type(1) {
+            background-color: red;
+            /* * Icons  */
         }
 
-        article:nth-of-type(2){
-            background-color:yellow;
+        article:nth-of-type(2) {
+            background-color: yellow;
 
-            h4{
-                margin: 1vh 0;                  /* * für Mobile Abstand oben zu Icon und unten zu p  */
+            h4 {
+                margin: 1vh 0;
+                /* * für Mobile Abstand oben zu Icon und unten zu p  */
             }
         }
 
@@ -301,6 +308,80 @@ header {
 
 
 /* ********************    section Text ___ Are you ready    ********** */
-.section_textAreYouReady{
+/* *** Vorsicht bekommt Style von    section_textEvery ***** */
+.section_textAreYouReady {
     background-color: red;
+}
+
+
+
+
+
+
+/* ********************    section Block 01 bis 04    ********** */
+.section_block01bis04 {
+    background-color: orange;
+    display: flex;
+    /* * richtet 01 bis 04 im flex aus */
+    flex-wrap: wrap;
+    text-align: center;
+    /* * text Icons usw. Mittig ausrichten */
+    padding-top: 2vh;
+    /* * Abstand zu text Are you Ready */
+    padding-bottom: 2vh;
+    /* * Abstand zu Footer */
+
+
+    /* ********************    section 01 von 04 Rakete  Bild Text  ___ order    ********** */
+    section {
+        background-color: yellow;
+        display: block;
+        /*  * Bei Deskop umstellen - 
+         richtet Bilder und Text aus */
+
+        /* ******* große Bild */
+        >article:nth-of-type(1) {
+            background-color: aqua;
+            order: 1;
+            /* * Order wird für Desktop gebraucht, 
+            da soll ja Bild text Reihenfolge bei jedem ten wechseln */
+
+            /* *  die > bei img und article werden gebraucht, das die icons nicht mit angesprochen werden */
+            >img {
+                background-color: yellowgreen;
+                max-width: 100%;
+                /* * hebt default einstellung von oben auf  */
+            }
+        }
+        /* *******   01-04 usw + icon */
+        >article:nth-of-type(2) {
+            background-color: violet;
+            order: 1;
+            padding: 2vh 2vh 2vh 2vh;               /* * Abstand zu Bild und zu Rand */
+
+            /* *******   icon */
+            >article:nth-of-type(1){
+                background-color: yellow;
+                display: flex;
+                justify-content: space-around;
+                font-size: 2rem;
+
+            }
+            >article:nth-of-type(2){
+                background-color: yellowgreen;
+
+                h4 {
+                    background-color: orange;
+                    margin-top: 2vh;            /* * Abstand zu Nummer 01 nach oben */
+                    margin-bottom: 2vh;         /* * Abstand zu text p */
+                    font-size: 1.6rem;
+                }
+            
+
+
+            }
+        
+        }
+    }
+
 }
