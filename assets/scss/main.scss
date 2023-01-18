@@ -6,3 +6,38 @@ $farbe___rot:#ff3571;
 $farbe___grau:#dddddd;
 $farbe___blau:#3c30ff;
 $farbe___weiß:#fff;
+
+
+/* ******************* einbinden Font-Family Robot ************* */
+
+@font-face {
+    font-family: schriftDuenn;
+    src: url("../fonts/Roboto_3/Roboto-Thin.ttf");
+}
+
+@font-face {
+    font-family: schriftNormal;
+    src: url("../fonts/Roboto_3/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: schriftDick;
+    src: url("../fonts/Roboto_3/Roboto-Bold.ttf");
+}
+
+/* *
+dünn
+font-family: 'schriftDuenn', sans-serif;
+
+normal
+font-family: 'schriftNormal', sans-serif;
+
+dick
+font-family: 'schriftDick', sans-serif;
+
+*/
+
+h1{
+    font-family: 'schriftDick', sans-serif;
+
+}
