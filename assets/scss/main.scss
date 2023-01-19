@@ -847,21 +847,47 @@ footer {
         }
     }
 
-/* *************** 01 bis 04 Bilder Order verändern ******* */
-/* ********** jedes zweite umgedreht, das Text zuerst */
-#section01bis04___order1{
-    order: 1;
-}
-
-#section01bis04___order0{
-    order: 0;
-}
 
 
+    /* *************** 01 bis 04 Bilder Order verändern ******* */
+    /* ********** jedes zweite umgedreht, das Text zuerst */
+    #section01bis04___order1 {
+        order: 1;
+    }
+
+    #section01bis04___order0 {
+        order: 0;
+    }
 
 
 
+    /* ************************** footer ************************ */
+    /* ************************** footer ************************ */
+    /* ************************** footer ************************ */
 
+
+
+    footer {
+
+        p {
+            padding: 2vh;
+            /* * mehr Abstand nach oben und unten */
+            letter-spacing: 1px;
+            /* * damit Text breiter als h2 Text wirkt */
+
+        }
+
+        form {
+            background-color: lightcoral;
+            flex-direction: column;
+
+     /* ***** input */
+     article:nth-of-type(1) {
+        background-color: rgb(186, 152, 87);
+
+            }
+        }
+    }
 
 
 
