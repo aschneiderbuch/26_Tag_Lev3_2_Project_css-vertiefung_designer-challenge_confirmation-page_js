@@ -257,6 +257,7 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
   /* Vorsicht bei flex verschwinden Icons */
 }
 .section_vierErBlockAlternativGrid section article:nth-of-type(1) {
+  background-color: rgba(245, 222, 179, 0);
   /* * Icons  */
 }
 .section_vierErBlockAlternativGrid section article:nth-of-type(2) h4 {
@@ -541,6 +542,9 @@ footer > article:nth-of-type(2) > img {
   .section_block01bis04 section > article:nth-of-type(1) {
     width: 30%;
   }
+  .section_block01bis04 section > article:nth-of-type(1) > img {
+    background-color: rgba(245, 222, 179, 0);
+  }
   .section_block01bis04 section > article:nth-of-type(2) {
     width: 50%;
     text-align: left;
@@ -558,6 +562,9 @@ footer > article:nth-of-type(2) > img {
     /* * damit jetzt abstand zwischen 01 und Augen entsteht */
     width: 100%;
   }
+  .section_block01bis04 section > article:nth-of-type(2) > article:nth-of-type(1) h3 {
+    background-color: rgba(245, 222, 179, 0);
+  }
   .section_block01bis04 section > article:nth-of-type(2) > article:nth-of-type(1) img {
     max-width: 6%;
     /* * Damit Augen größer werden */
@@ -566,6 +573,9 @@ footer > article:nth-of-type(2) > img {
     line-height: 1.6;
     width: 80%;
     /* Damit p Text 4 Zeilig wird */
+  }
+  .section_block01bis04 section > article:nth-of-type(2) > article:nth-of-type(2) h4 {
+    background-color: rgba(245, 222, 179, 0);
   }
   /* *************** 01 bis 04 Bilder Order verändern ******* */
   /* ********** jedes zweite umgedreht, das Text zuerst */
@@ -608,6 +618,14 @@ footer > article:nth-of-type(2) > img {
   .button_submit___style {
     background-color: #ff3571;
     color: #fff;
+  }
+  footer > article:nth-of-type(2) {
+    background-color: rgba(245, 222, 179, 0);
+  }
+  /* ******* Herz + Text */
+  footer > article:nth-of-type(2) {
+    width: 20%;
+    justify-content: center;
   }
   /* **** Ende */
 }

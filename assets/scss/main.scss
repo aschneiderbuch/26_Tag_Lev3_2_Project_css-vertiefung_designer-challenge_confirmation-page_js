@@ -334,6 +334,7 @@ header {
         /* Vorsicht bei flex verschwinden Icons */
 
         article:nth-of-type(1) {
+            background-color: rgba(245, 222, 179, 0);
             /* * Icons  */
         }
 
@@ -752,6 +753,8 @@ footer {
                 width: 30%;
 
                 >img {
+                    background-color: rgba(245, 222, 179, 0);
+
 
                 }
             }
@@ -776,6 +779,8 @@ footer {
                     width: 100%;
 
                     h3 {
+                        background-color: rgba(245, 222, 179, 0);
+
                     }
 
                     img {
@@ -792,6 +797,8 @@ footer {
                     /* Damit p Text 4 Zeilig wird */
 
                     h4 {
+                        background-color: rgba(245, 222, 179, 0);
+
                     }
                 }
             }
@@ -864,11 +871,18 @@ footer {
 
     }
 
-footer     >article:nth-of-type(2) {
-}
+    footer>article:nth-of-type(2) {
+        background-color: rgba(245, 222, 179, 0);
+
+    }
 
 
+    /* ******* Herz + Text */
 
+    footer >article:nth-of-type(2) {
+        width: 20%;
+        justify-content: center;
+    }
 
 
 
