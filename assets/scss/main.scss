@@ -140,7 +140,6 @@ header {
                     /* * Unter Zeile kleiner machen */
                 }
             }
-
         }
 
         /* ************************ Text links unten ___ mit h1   ******** */
@@ -158,10 +157,7 @@ header {
                 /* * Abstand Mobile links rechts, damit Schrift nicht bis an Rand geht bei  */
                 margin-right: 2vw;
             }
-
         }
-
-
     }
 
     /* ************************ 2x Bilder Überblenden ___ Wolke + people ***** */
@@ -211,7 +207,6 @@ header {
     filter: hue-rotate(0deg);
     /* * wird Bild wird rot gefärtb */
     animation: einblenden 6s infinite;
-
 }
 
 @keyframes einblenden {
@@ -241,7 +236,6 @@ header {
     float: right;
     top: 10px;
     width: 15px;
-
 }
 
 
@@ -345,7 +339,6 @@ header {
                 /* * für Mobile Abstand oben zu Icon und unten zu p  */
             }
         }
-
     }
 }
 
@@ -414,7 +407,6 @@ header {
                 display: flex;
                 justify-content: space-around;
                 font-size: 2rem;
-
             }
 
             /* ***** text */
@@ -427,14 +419,9 @@ header {
                     /* * Abstand zu text p */
                     font-size: 1.6rem;
                 }
-
-
-
             }
-
         }
     }
-
 }
 
 
@@ -455,8 +442,6 @@ footer {
         /*  * Abstand zu h2 drüber */
         margin-bottom: 2vh;
         /* * Abstand zu Buttons drunter */
-
-
     }
 
     form {
@@ -474,7 +459,6 @@ footer {
 
 
         /* ***** input */
-
     }
 
     /* *************************** Button Style ****************** */
@@ -499,14 +483,12 @@ footer {
     }
 
     .button_input___style {
-        letter-spacing: 1px;
-         font-size: 0.6rem;
+        font-size: 0.5rem;
     }
 
     .button_submit___style {
         background-color: $farbe___rot;
         color: $farbe___weiß;
-
     }
 
     .button_submit___style:hover {
@@ -593,7 +575,6 @@ footer {
         top: 26px;
         width: 230px;
         max-width: 30px;
-
     }
 
 
@@ -730,7 +711,6 @@ footer {
             padding: 3vh 10vw;
             /* * 10vw damit mehr Abstand zu anderen entsteht */
         }
-
     }
 
 
@@ -750,12 +730,7 @@ footer {
                 margin: 0 auto 5vh;
                 /* Mittig und 5vh nach unten 
                                     * Abstand erhöht */
-
-
             }
-
-
-
         }
 
         p {
@@ -790,8 +765,6 @@ footer {
 
                 >img {
                     background-color: rgba(245, 222, 179, 0);
-
-
                 }
             }
 
@@ -816,14 +789,12 @@ footer {
 
                     h3 {
                         background-color: rgba(245, 222, 179, 0);
-
                     }
 
                     img {
                         max-width: 6%;
                         /* * Damit Augen größer werden */
                     }
-
                 }
 
                 /* ***** text */
@@ -834,7 +805,6 @@ footer {
 
                     h4 {
                         background-color: rgba(245, 222, 179, 0);
-
                     }
                 }
             }
@@ -868,7 +838,6 @@ footer {
             /* * mehr Abstand nach oben und unten */
             letter-spacing: 1px;
             /* * damit Text breiter als h2 Text wirkt */
-
         }
 
         form {
@@ -878,8 +847,11 @@ footer {
         }
     }
 
-        /* *************************** Button Style ****************** */
-
+    /* *************************** Button Style ****************** */
+    .button_input___style {
+        letter-spacing: 2px;
+        word-spacing: 10px;
+    }
 
 
 
@@ -890,7 +862,6 @@ footer {
 
     footer>article:nth-of-type(2) {
         background-color: rgba(245, 222, 179, 0);
-
     }
 
 
