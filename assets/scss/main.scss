@@ -534,24 +534,20 @@ img:hover {
 
         .animationElefant{
             scale: 1;
-            color:red;
             animation: elefantBewegungsAnimation 5s ease-in-out;
         }
 
         @keyframes elefantBewegungsAnimation {
             from{
-                scale: 0.8;
-                color: red;
+                scale: 1;
             }
 
             50%{
-                scale: 1.4;
-                color: greenyellow;
+                scale: 2;
             }
 
             to{
                 scale: 1;
-                color: green;
             }
             
         }
