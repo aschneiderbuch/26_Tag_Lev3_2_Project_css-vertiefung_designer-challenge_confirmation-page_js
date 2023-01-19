@@ -598,6 +598,19 @@ footer {
 .section_textEvery{
     background-color: rgb(227, 193, 130);
     display: flex;
+    justify-content: space-around;
+
+    article {
+        background-color: rgb(8, 94, 94);
+        width:130vw;
+        padding-left: 15vw;
+        font-size: clamp(1.5rem, 10vw, 2.5rem);
+        text-align: left;
+        margin-right: 5vw;
+    }
+    p {
+        font-size: clamp(1.5rem, 10vw, 1.5rem);
+    }
 }
 
 
