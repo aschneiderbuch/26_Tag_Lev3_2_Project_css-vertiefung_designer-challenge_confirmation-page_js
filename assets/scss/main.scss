@@ -477,6 +477,41 @@ footer {
 
     }
 
+    /* *************************** Button Style ****************** */
+
+    .input_email {
+        width: 100%;
+        padding-bottom: 2vh;
+    }
+
+
+    .button_submit {
+        width: 100%;
+    }
+
+
+    .button_allgemein___style {
+        width: 20vw;
+        text-align: center;
+        padding: 1vh;
+        border-radius: 10px;
+        border-color: $farbe___grau;
+    }
+
+    .button_input___style {
+        letter-spacing: 1px;
+    }
+
+    .button_submit___style {
+        background-color: $farbe___rot;
+        color: $farbe___weiß;
+
+    }
+
+    .button_submit___style:hover {
+        background: rgb(60, 48, 255);
+        background: linear-gradient(51deg, rgba(60, 48, 255, 1) 0%, rgba(255, 53, 113, 1) 100%);
+    }
 
     /* ******* Herz + Text */
     >article:nth-of-type(2) {
@@ -842,34 +877,15 @@ footer {
         }
     }
 
-    .input_email {
-        width: 100%;
-        padding-bottom: 2vh;
-    }
+        /* *************************** Button Style ****************** */
 
 
-    .button_submit {
-        width: 100%;
-    }
 
 
-    .button_allgemein___style {
-        width: 10vw;
-        text-align: center;
-        padding: 1vh;
-        border-radius: 10px;
-        border-color: $farbe___grau;
-    }
 
-    .button_input___style {
-        letter-spacing: 1px;
-    }
 
-    .button_submit___style {
-        background-color: $farbe___rot;
-        color: $farbe___weiß;
 
-    }
+
 
     footer>article:nth-of-type(2) {
         background-color: rgba(245, 222, 179, 0);
@@ -879,7 +895,7 @@ footer {
 
     /* ******* Herz + Text */
 
-    footer >article:nth-of-type(2) {
+    footer>article:nth-of-type(2) {
         width: 20%;
         justify-content: center;
     }

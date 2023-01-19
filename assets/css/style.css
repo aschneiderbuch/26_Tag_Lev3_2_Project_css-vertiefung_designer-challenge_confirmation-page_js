@@ -340,6 +340,7 @@ footer {
   /* *Abstand zu Main */
   padding-bottom: 1vh;
   /* * Abstand zu Ende */
+  /* *************************** Button Style ****************** */
   /* ******* Herz + Text */
 }
 footer p {
@@ -360,6 +361,31 @@ footer form {
   margin: 0 auto;
   /*  * durch auto ganze Container Mittig ausrichten */
   /* ***** input */
+}
+footer .input_email {
+  width: 100%;
+  padding-bottom: 2vh;
+}
+footer .button_submit {
+  width: 100%;
+}
+footer .button_allgemein___style {
+  width: 20vw;
+  text-align: center;
+  padding: 1vh;
+  border-radius: 10px;
+  border-color: #dddddd;
+}
+footer .button_input___style {
+  letter-spacing: 1px;
+}
+footer .button_submit___style {
+  background-color: #ff3571;
+  color: #fff;
+}
+footer .button_submit___style:hover {
+  background: rgb(60, 48, 255);
+  background: linear-gradient(51deg, rgb(60, 48, 255) 0%, rgb(255, 53, 113) 100%);
 }
 footer > article:nth-of-type(2) {
   display: flex;
@@ -598,27 +624,7 @@ footer > article:nth-of-type(2) > img {
     flex-direction: column;
     /* ***** input */
   }
-  .input_email {
-    width: 100%;
-    padding-bottom: 2vh;
-  }
-  .button_submit {
-    width: 100%;
-  }
-  .button_allgemein___style {
-    width: 10vw;
-    text-align: center;
-    padding: 1vh;
-    border-radius: 10px;
-    border-color: #dddddd;
-  }
-  .button_input___style {
-    letter-spacing: 1px;
-  }
-  .button_submit___style {
-    background-color: #ff3571;
-    color: #fff;
-  }
+  /* *************************** Button Style ****************** */
   footer > article:nth-of-type(2) {
     background-color: rgba(245, 222, 179, 0);
   }
