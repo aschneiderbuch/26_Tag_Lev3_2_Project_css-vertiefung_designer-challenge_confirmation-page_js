@@ -575,29 +575,67 @@ footer article:nth-of-type(2) > img {
     /* ********************    section 01 von 04 Rakete  Bild Text  ___ order    ********** */
   }
   .section_block01bis04 section {
-    background-color: yellow;
+    background-color: rgb(172, 172, 75);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 3vw;
+    /* * Abstand Spalte Bild Text */
+    padding-bottom: 10vh;
+    /* * Abstand zur nächsten Bild Text Reihe */
     /* ******* große Bild */
     /* *******   01-04 usw + icon */
   }
   .section_block01bis04 section > article:nth-of-type(1) {
-    background-color: aqua;
+    background-color: rgb(24, 110, 110);
+    width: 30%;
   }
   .section_block01bis04 section > article:nth-of-type(1) > img {
     background-color: yellowgreen;
   }
   .section_block01bis04 section > article:nth-of-type(2) {
-    background-color: violet;
+    background-color: rgb(220, 17, 220);
+    width: 50%;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
     /* *******   icon */
     /* ***** text */
   }
   .section_block01bis04 section > article:nth-of-type(2) > article:nth-of-type(1) {
     background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    /* * damit 01 über Zahl steht und von Zeile in Spalten Ausrichtung geht */
+    justify-content: space-between;
+    /* * damit jetzt abstand zwischen 01 und Augen entsteht */
+    width: 100%;
+  }
+  .section_block01bis04 section > article:nth-of-type(2) > article:nth-of-type(1) h3 {
+    background-color: red;
+  }
+  .section_block01bis04 section > article:nth-of-type(2) > article:nth-of-type(1) img {
+    background-color: greenyellow;
+    max-width: 6%;
+    /* * Damit Augen größer werden */
   }
   .section_block01bis04 section > article:nth-of-type(2) > article:nth-of-type(2) {
     background-color: yellowgreen;
+    line-height: 1.6;
+    width: 80%;
+    /* Damit p Text 4 Zeilig wird */
   }
   .section_block01bis04 section > article:nth-of-type(2) > article:nth-of-type(2) h4 {
     background-color: orange;
+  }
+  /* *************** 01 bis 04 Bilder Order verändern ******* */
+  /* ********** jedes zweite umgedreht, das Text zuerst */
+  #section01bis04___order1 {
+    order: 1;
+  }
+  #section01bis04___order0 {
+    order: 0;
   }
   /* **** Ende */
 }
