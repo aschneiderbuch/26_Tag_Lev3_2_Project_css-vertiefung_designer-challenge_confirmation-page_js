@@ -393,10 +393,7 @@ footer form {
   /*  * durch auto ganze Container Mittig ausrichten */
   /* ***** input */
 }
-footer form article:nth-of-type(1) {
-  background-color: orange;
-}
-footer article:nth-of-type(2) {
+footer > article:nth-of-type(2) {
   background-color: orange;
   display: flex;
   /* * damit Herz hinten */
@@ -404,11 +401,11 @@ footer article:nth-of-type(2) {
   justify-content: space-around;
   align-items: center;
 }
-footer article:nth-of-type(2) p {
+footer > article:nth-of-type(2) p {
   background-color: yellow;
   font-size: 0.55rem;
 }
-footer article:nth-of-type(2) > img {
+footer > article:nth-of-type(2) > img {
   background-color: greenyellow;
   max-width: 20px;
   object-fit: scale-down;
@@ -651,8 +648,28 @@ footer article:nth-of-type(2) > img {
     flex-direction: column;
     /* ***** input */
   }
-  footer form article:nth-of-type(1) {
-    background-color: rgb(186, 152, 87);
+  .input_email {
+    background-color: yellow;
+    width: 100%;
+    padding-bottom: 2vh;
+  }
+  .button_submit {
+    background-color: aqua;
+    width: 100%;
+  }
+  .button_allgemein___style {
+    width: 10vw;
+    text-align: center;
+    padding: 1vh;
+    border-radius: 10px;
+    border-color: #dddddd;
+  }
+  .button_input___style {
+    letter-spacing: 1px;
+  }
+  .button_submit___style {
+    background-color: #ff3571;
+    color: #fff;
   }
   /* **** Ende */
 }
