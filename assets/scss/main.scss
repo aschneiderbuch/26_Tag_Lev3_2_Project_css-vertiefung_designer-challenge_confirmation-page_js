@@ -199,34 +199,40 @@ header {
     max-width: 100%;
 }
 
-.dorchsichtig{          /* * durchsichtig machen */
-    opacity:0.5;
+/* ******************* Animiation */
+.dorchsichtig {
+    opacity: 0.5;
+    /* * durchsichtig machen */
     transform: translateY(-500px);
+    /* fällt ins Bild */
     rotate: 0deg;
+    /* * dreht sich beim fallen */
     scale: 0.5;
+    /* * wird eingezoomt beim fallen */
+    filter: hue-rotate(0deg);
+        /* * wird Bild wird rot gefärtb */
+      animation: einblenden 6s infinite;
 
-
-    animation: einblenden 6s infinite;
-   
 }
 
 @keyframes einblenden {
-    from{
+    from {
         opacity: 0;
         transform: translateY(-300px);
-        rotate: 0deg;
+        rotate: 10deg;
         scale: 0.3;
     }
 
-    50%{
-        scale:2;
-        filter: hue-rotate(190deg)
+    50% {
+        scale: 2;
+        filter: hue-rotate(190deg);
+        rotate: 60deg;
     }
 
-    to{
+    to {
         opacity: 1;
         transform: translateY(0px);
-        rotate: 720deg;
+        rotate: 0deg;
         scale: 1.2
     }
 }
@@ -618,8 +624,17 @@ footer {
         ;
     }
 
+    /* ******************* Animiation */
+.dorchsichtig{
+    transform: translateY(-0px);
 
-
+}
+    
+    @keyframes ein {
+        from {
+             transform: translateY(100px);
+    }
+    }
 
 
 
