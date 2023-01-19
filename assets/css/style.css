@@ -283,9 +283,18 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
 }
 
 /* ********************    section Text ___ Are you ready    ********** */
-/* *** Vorsicht bekommt Style von    section_textEvery ***** */
 .section_textAreYouReady {
   background-color: red;
+  padding: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section_textAreYouReady h2 {
+  background-color: aqua;
+  text-align: center;
+  margin: 0 auto 2vh;
+  /* Mittig und 2vh nach unten  */
 }
 
 /* ********************    section Block 01 bis 04    ********** */
@@ -530,11 +539,65 @@ footer article:nth-of-type(2) > img {
   /* ********************    section 4er Block alternativ Grid    ********** */
   .section_vierErBlockAlternativGrid {
     justify-content: center;
-    padding: 0 6vw; /* * Blöcke näher zusammen rücken */
+    padding: 0 6vw;
+    /* * Blöcke näher zusammen rücken */
   }
   .section_vierErBlockAlternativGrid section {
-    width: 49%; /* * damit es Umbruch nach 2 St gibt */
-    padding: 3vh 10vw; /* * 10vw damit mehr Abstand zu anderen entsteht */
+    width: 49%;
+    /* * damit es Umbruch nach 2 St gibt */
+    padding: 3vh 10vw;
+    /* * 10vw damit mehr Abstand zu anderen entsteht */
+  }
+  /* ********************    section Text ___ Are you ready    ********** */
+  .section_textAreYouReady {
+    flex-wrap: wrap;
+    padding: 10vh;
+  }
+  .section_textAreYouReady article {
+    width: 50%;
+    /* * damit p sich danach richtet und im flex umbricht */
+  }
+  .section_textAreYouReady article h2 {
+    margin: 0 auto 5vh;
+    /* Mittig und 5vh nach unten 
+                        * Abstand erhöht */
+  }
+  .section_textAreYouReady p {
+    background-color: yellow;
+    width: 51%;
+    letter-spacing: 1px;
+    /* * damit Text 3 Zeilig wird und breiter */
+    text-align: center;
+  }
+  /* ********************    section Block 01 bis 04    ********** */
+  .section_block01bis04 {
+    background-color: rgb(229, 199, 144);
+    /* ********************    section 01 von 04 Rakete  Bild Text  ___ order    ********** */
+  }
+  .section_block01bis04 section {
+    background-color: yellow;
+    /* ******* große Bild */
+    /* *******   01-04 usw + icon */
+  }
+  .section_block01bis04 section > article:nth-of-type(1) {
+    background-color: aqua;
+  }
+  .section_block01bis04 section > article:nth-of-type(1) > img {
+    background-color: yellowgreen;
+  }
+  .section_block01bis04 section > article:nth-of-type(2) {
+    background-color: violet;
+    /* *******   icon */
+    /* ***** text */
+  }
+  .section_block01bis04 section > article:nth-of-type(2) > article:nth-of-type(1) {
+    background-color: yellow;
+  }
+  .section_block01bis04 section > article:nth-of-type(2) > article:nth-of-type(2) {
+    background-color: yellowgreen;
+  }
+  .section_block01bis04 section > article:nth-of-type(2) > article:nth-of-type(2) h4 {
+    background-color: orange;
   }
   /* **** Ende */
 }
