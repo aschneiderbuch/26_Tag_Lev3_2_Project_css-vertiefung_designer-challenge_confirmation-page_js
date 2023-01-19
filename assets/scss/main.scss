@@ -133,7 +133,7 @@ header {
 
             article {
                 background-color: yellow;
-                padding-left: 2vw;
+                padding-left: 3vw;
                 /* * Abstand zu icon Elefant */
 
                 p {
@@ -198,6 +198,16 @@ header {
 
         }
     }
+}
+
+
+#img_Elefant___sticky{
+    background-color: orange;
+    position: fixed;
+    float: right;
+    top: 10px;
+    width:15px;
+    
 }
 
 
@@ -513,7 +523,7 @@ footer {
 
     header section:nth-of-type(1)>article:nth-of-type(1) article {
         background-color: rgb(229, 229, 167);
-        padding-left: 0.5vw;
+        padding-left: 2vw;
 
         h5 {
             font-size: clamp(0.8rem, 10vw, 1.2rem);
@@ -526,6 +536,16 @@ footer {
 
 
 
+    
+    #img_Elefant___sticky{
+        background-color: rgb(206, 170, 105);
+        position: fixed;
+        top: 26px;
+        width:230px;
+        max-width: 30px;
+        
+    }
+    
 
 
 

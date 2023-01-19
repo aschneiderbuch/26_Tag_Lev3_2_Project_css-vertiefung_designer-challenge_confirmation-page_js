@@ -110,7 +110,7 @@ header section:nth-of-type(1) > article:nth-of-type(1) {
 }
 header section:nth-of-type(1) > article:nth-of-type(1) article {
   background-color: yellow;
-  padding-left: 2vw;
+  padding-left: 3vw;
   /* * Abstand zu icon Elefant */
 }
 header section:nth-of-type(1) > article:nth-of-type(1) article p {
@@ -153,6 +153,14 @@ header section:nth-of-type(2) img {
              transform: translateY(-100px);
              transition: 2s ease-in ;
   */
+}
+
+#img_Elefant___sticky {
+  background-color: orange;
+  position: fixed;
+  float: right;
+  top: 10px;
+  width: 15px;
 }
 
 /* ************************** main ************************ */
@@ -389,13 +397,20 @@ footer article:nth-of-type(2) > img {
   /* ************************* Text links oben ___ mit Elefant ******** */
   header section:nth-of-type(1) > article:nth-of-type(1) article {
     background-color: rgb(229, 229, 167);
-    padding-left: 0.5vw;
+    padding-left: 2vw;
   }
   header section:nth-of-type(1) > article:nth-of-type(1) article h5 {
     font-size: clamp(0.8rem, 10vw, 1.2rem);
   }
   header section:nth-of-type(1) > article:nth-of-type(1) article p {
     font-size: clamp(0.6rem, 10vw, 0.9rem);
+  }
+  #img_Elefant___sticky {
+    background-color: rgb(206, 170, 105);
+    position: fixed;
+    top: 26px;
+    width: 230px;
+    max-width: 30px;
   }
   /* ************************ Text links unten ___ mit h1   ******** */
   header section:nth-of-type(1) > article:nth-of-type(2) {
