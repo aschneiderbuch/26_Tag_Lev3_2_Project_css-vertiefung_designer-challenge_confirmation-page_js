@@ -372,16 +372,16 @@
             <p>Subscribe to be the first to hear about updates, tips and recommendations!
             </p>
 
-            <form action="">
+            <form action="" onsubmit="return false">            <!-- * false damit nicht gleich eingabe von email beim clicken von submite gelöscht wird, sondern wir sie in einer Varibale speichern können -->
                 <!-- ***** input  -->
                 <article class="input_email">
                     <label for="email"></label>
-                    <input class="button_allgemein___style button_input___style" type="email" name="email" id="email" placeholder="Write yor email her">
+                    <input id="input_email" class="button_allgemein___style button_input___style" type="email" name="email" id="email" placeholder="Write yor email her">
                 </article>
 
                 <article class="button_submit">
                     <label for="submit"></label>
-                    <input class="button_allgemein___style button_submit___style" type="submit" value="Subscribe">
+                    <input id="button_submit" class="button_allgemein___style button_submit___style" type="submit" value="Subscribe">
                 </article>
                 <!-- ************     
                 * Button submit soll evtl. 
