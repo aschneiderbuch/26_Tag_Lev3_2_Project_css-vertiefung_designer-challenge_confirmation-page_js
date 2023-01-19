@@ -61,12 +61,14 @@ body {
 h1 {
     font-family: 'schriftDick', sans-serif;
     color: $farbe___schwarz;
-    font-size: 2rem;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
 }
 
 h2 {
     font-family: 'schriftDick', sans-serif;
     color: $farbe___schwarz;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+
 }
 
 /* ************************ Zahlen bei Bilder 01 02 03 usw  */
@@ -85,13 +87,13 @@ h6 {
 p {
     font-family: 'schriftDuenn', sans-serif;
     color: $farbe___schwarz;
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 40vw, 1.1rem);
 }
 
 a {
     font-family: 'schriftDuenn', sans-serif;
     color: $farbe___rot;
-    font-size: 0.5rem;
+    font-size: clamp(1rem, 4vw, 1.5rem);
 }
 
 
@@ -203,7 +205,7 @@ header {
 .dorchsichtig {
     opacity: 0.5;
     /* * durchsichtig machen */
-    transform: translateY(-500px);
+    transform: translateY(-100px);
     /* fällt ins Bild */
     rotate: 0deg;
     /* * dreht sich beim fallen */
@@ -218,7 +220,7 @@ header {
 @keyframes einblenden {
     from {
         opacity: 0;
-        transform: translateY(-300px);
+        transform: translateY(-100px);
         rotate: 10deg;
         scale: 0.3;
     }
@@ -226,13 +228,13 @@ header {
     50% {
         scale: 2;
         filter: hue-rotate(190deg);
-        rotate: 60deg;
+        rotate: 320deg;
     }
 
     to {
         opacity: 1;
         transform: translateY(0px);
-        rotate: 0deg;
+        rotate: 360deg;
         scale: 1.2
     }
 }
@@ -291,15 +293,15 @@ header {
     display: felx;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 
-
- padding: 3vh 3vw;
+    padding: 3vh 3vw;
 
     article {
         background-color: aqua;
-        width: 50%;
         text-align: center;
-        margin: 0 auto 2vh;
+
+        margin-bottom: 2vh;
         /*  2vh Abstand nach unten zu p */
         /* * evtl. auto abändern bei Desktop */
     }
@@ -311,10 +313,10 @@ header {
 /* ********************    section h2 ___ After    ********** */
 .section_h2After {
     background-color: red;
+    padding: 2vh;
 
     h2 {
         background-color: aqua;
-        width: 50%;
         text-align: center;
         margin: 0 auto 2vh;
         /* Mittig und 2vh nach unten  */
@@ -329,12 +331,13 @@ header {
     background-color: orange;
     display: flex;
     flex-wrap: wrap;
+    /* * wrap for Mobile in Desktop  = nowrap */
     text-align: center;
     /* * richtet Text Icos usw Mittig aus bei Mobile */
 
 
     /* ***************    section 4er B ___  1  te links oben    ********** */
-    >section {
+    section {
         background-color: aqua;
         padding: 3vh;
         /* * Abstand oben unten links rechts 3vh  */
@@ -656,7 +659,6 @@ footer {
 
 
         a {
-            font-size: clamp(0.5rem, 10vw, 1.0rem);
             font-weight: bold;
         }
     }
@@ -667,21 +669,82 @@ footer {
     .section_textEvery {
         background-color: rgb(227, 193, 130);
         display: flex;
-        justify-content: space-around;
+        align-items: flex-start;
+        /* * oben bündig */
+        justify-content: center;
+        /* * zusamme  */
+        column-gap: 5vw;
+        /* * spaltenbreite in der Mitte */
+        flex-wrap: nowrap;
+        /* * kein umbruch in Deskotp */
+
+        padding: 15vh 3vw 8vh;
+
 
         article {
             background-color: rgb(8, 94, 94);
-            width: 130vw;
-            padding-left: 15vw;
+            width: 18vw;
             font-size: clamp(1.5rem, 10vw, 2.5rem);
             text-align: left;
-            margin-right: 5vw;
+
+            margin-bottom: 0;
         }
 
         p {
-            font-size: clamp(1.5rem, 10vw, 1.5rem);
+            width: 30vw;
         }
     }
+
+
+
+    /* ********************    section h2 ___ After    ********** */
+
+    .section_h2After {
+            padding-bottom: 5vh;   
+
+        h2 {
+            width: 42%;
+            margin-left: 17.5vw;
+            /* * Abstand nach links, es sitzt unter Every */
+            text-align: left;
+        }
+    }
+
+
+/* ********************    section 4er Block alternativ Grid    ********** */
+
+.section_vierErBlockAlternativGrid{
+    justify-content: center;
+    padding: 0 6vw;                 /* * Blöcke näher zusammen rücken */
+
+section {
+    width: 49%;                 /* * damit es Umbruch nach 2 St gibt */
+    padding: 3vh 10vw ;         /* * 10vw damit mehr Abstand zu anderen entsteht */
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

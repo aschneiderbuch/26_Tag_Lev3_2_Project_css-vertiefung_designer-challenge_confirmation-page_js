@@ -43,12 +43,13 @@ body {
 h1 {
   font-family: "schriftDick", sans-serif;
   color: #0b0c17;
-  font-size: 2rem;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
 }
 
 h2 {
   font-family: "schriftDick", sans-serif;
   color: #0b0c17;
+  font-size: clamp(1.5rem, 5vw, 3rem);
 }
 
 /* ************************ Zahlen bei Bilder 01 02 03 usw  */
@@ -67,13 +68,13 @@ h6 {
 p {
   font-family: "schriftDuenn", sans-serif;
   color: #0b0c17;
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 40vw, 1.1rem);
 }
 
 a {
   font-family: "schriftDuenn", sans-serif;
   color: #ff3571;
-  font-size: 0.5rem;
+  font-size: clamp(1rem, 4vw, 1.5rem);
 }
 
 /* ***************  icons    und    images   begrenzen   ******************* */
@@ -160,7 +161,7 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
 .dorchsichtig {
   opacity: 0.5;
   /* * durchsichtig machen */
-  transform: translateY(-500px);
+  transform: translateY(-100px);
   /* fällt ins Bild */
   rotate: 0deg;
   /* * dreht sich beim fallen */
@@ -174,19 +175,19 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
 @keyframes einblenden {
   from {
     opacity: 0;
-    transform: translateY(-300px);
+    transform: translateY(-100px);
     rotate: 10deg;
     scale: 0.3;
   }
   50% {
     scale: 2;
     filter: hue-rotate(190deg);
-    rotate: 60deg;
+    rotate: 320deg;
   }
   to {
     opacity: 1;
     transform: translateY(0px);
-    rotate: 0deg;
+    rotate: 360deg;
     scale: 1.2;
   }
 }
@@ -229,13 +230,13 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
   display: felx;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   padding: 3vh 3vw;
 }
 .section_textEvery article {
   background-color: aqua;
-  width: 50%;
   text-align: center;
-  margin: 0 auto 2vh;
+  margin-bottom: 2vh;
   /*  2vh Abstand nach unten zu p */
   /* * evtl. auto abändern bei Desktop */
 }
@@ -243,10 +244,10 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
 /* ********************    section h2 ___ After    ********** */
 .section_h2After {
   background-color: red;
+  padding: 2vh;
 }
 .section_h2After h2 {
   background-color: aqua;
-  width: 50%;
   text-align: center;
   margin: 0 auto 2vh;
   /* Mittig und 2vh nach unten  */
@@ -257,25 +258,26 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
   background-color: orange;
   display: flex;
   flex-wrap: wrap;
+  /* * wrap for Mobile in Desktop  = nowrap */
   text-align: center;
   /* * richtet Text Icos usw Mittig aus bei Mobile */
   /* ***************    section 4er B ___  1  te links oben    ********** */
 }
-.section_vierErBlockAlternativGrid > section {
+.section_vierErBlockAlternativGrid section {
   background-color: aqua;
   padding: 3vh;
   /* * Abstand oben unten links rechts 3vh  */
   display: block;
   /* Vorsicht bei flex verschwinden Icons */
 }
-.section_vierErBlockAlternativGrid > section article:nth-of-type(1) {
+.section_vierErBlockAlternativGrid section article:nth-of-type(1) {
   background-color: red;
   /* * Icons  */
 }
-.section_vierErBlockAlternativGrid > section article:nth-of-type(2) {
+.section_vierErBlockAlternativGrid section article:nth-of-type(2) {
   background-color: yellow;
 }
-.section_vierErBlockAlternativGrid > section article:nth-of-type(2) h4 {
+.section_vierErBlockAlternativGrid section article:nth-of-type(2) h4 {
   margin: 1vh 0;
   /* * für Mobile Abstand oben zu Icon und unten zu p  */
 }
@@ -488,7 +490,6 @@ footer article:nth-of-type(2) > img {
     margin-bottom: 6vh;
   }
   .section_a___style a {
-    font-size: clamp(0.5rem, 10vw, 1rem);
     font-weight: bold;
   }
   /* ********************    section Text ___ Every    ********** */
@@ -496,18 +497,44 @@ footer article:nth-of-type(2) > img {
   .section_textEvery {
     background-color: rgb(227, 193, 130);
     display: flex;
-    justify-content: space-around;
+    align-items: flex-start;
+    /* * oben bündig */
+    justify-content: center;
+    /* * zusamme  */
+    column-gap: 5vw;
+    /* * spaltenbreite in der Mitte */
+    flex-wrap: nowrap;
+    /* * kein umbruch in Deskotp */
+    padding: 15vh 3vw 8vh;
   }
   .section_textEvery article {
     background-color: rgb(8, 94, 94);
-    width: 130vw;
-    padding-left: 15vw;
+    width: 18vw;
     font-size: clamp(1.5rem, 10vw, 2.5rem);
     text-align: left;
-    margin-right: 5vw;
+    margin-bottom: 0;
   }
   .section_textEvery p {
-    font-size: clamp(1.5rem, 10vw, 1.5rem);
+    width: 30vw;
+  }
+  /* ********************    section h2 ___ After    ********** */
+  .section_h2After {
+    padding-bottom: 5vh;
+  }
+  .section_h2After h2 {
+    width: 42%;
+    margin-left: 17.5vw;
+    /* * Abstand nach links, es sitzt unter Every */
+    text-align: left;
+  }
+  /* ********************    section 4er Block alternativ Grid    ********** */
+  .section_vierErBlockAlternativGrid {
+    justify-content: center;
+    padding: 0 6vw; /* * Blöcke näher zusammen rücken */
+  }
+  .section_vierErBlockAlternativGrid section {
+    width: 49%; /* * damit es Umbruch nach 2 St gibt */
+    padding: 3vh 10vw; /* * 10vw damit mehr Abstand zu anderen entsteht */
   }
   /* **** Ende */
 }
