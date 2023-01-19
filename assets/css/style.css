@@ -96,12 +96,10 @@ header {
   /* ************************ 2x Bilder Überblenden ___ Wolke + people ***** */
 }
 header section:nth-of-type(1) {
-  background-color: red;
   /* ************************* Text links oben ___ mit Elefant ******** */
   /* ************************ Text links unten ___ mit h1   ******** */
 }
 header section:nth-of-type(1) > article:nth-of-type(1) {
-  background-color: aqua;
   display: flex;
   /* * Elefant und Texte nebeneinander */
   padding-top: 1vh;
@@ -110,7 +108,6 @@ header section:nth-of-type(1) > article:nth-of-type(1) {
   /* * Abstand nach links zum Rand */
 }
 header section:nth-of-type(1) > article:nth-of-type(1) article {
-  background-color: yellow;
   padding-left: 3vw;
   /* * Abstand zu icon Elefant */
 }
@@ -119,17 +116,14 @@ header section:nth-of-type(1) > article:nth-of-type(1) article p {
   /* * Unter Zeile kleiner machen */
 }
 header section:nth-of-type(1) > article:nth-of-type(2) {
-  background-color: yellow;
   padding-top: 5vh;
   /* * Abstand zu Elefant oben */
   text-align: center;
 }
 header section:nth-of-type(1) > article:nth-of-type(2) h1 {
-  background-color: violet;
   margin-bottom: 1vh;
 }
 header section:nth-of-type(1) > article:nth-of-type(2) p {
-  background-color: green;
   margin-left: 2vw;
   /* * Abstand Mobile links rechts, damit Schrift nicht bis an Rand geht bei  */
   margin-right: 2vw;
@@ -151,14 +145,17 @@ header section:nth-of-type(2) .img_Woken___backgroundImage {
 }
 header section:nth-of-type(2) .img_Woken___backgroundImage img {
   max-width: 100%;
+  overflow: hidden;
 }
 
 #animation___fallen {
+  overflow: hidden;
   max-width: 100%;
 }
 
 /* ******************* Animiation *************** */
 .dorchsichtig {
+  overflow: hidden;
   opacity: 0.5;
   /* * durchsichtig machen */
   transform: translateY(-100px);
@@ -192,7 +189,6 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
   }
 }
 #img_Elefant___sticky {
-  background-color: orange;
   position: fixed;
   float: right;
   top: 10px;
@@ -204,7 +200,6 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
 /* ************************** main ************************ */
 /* ********************    section a tag  ___ scroll    ********** */
 .section_a___style {
-  background-color: yellow;
   margin-top: 2vh;
   /* * Abstand zum header */
   margin-bottom: 4vh;
@@ -216,9 +211,6 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
 }
 
 /* ********************    section bild img Gallery    ********** */
-.section_bildGallery {
-  background-color: red;
-}
 .section_bildGallery > img {
   max-width: 100%;
 }
@@ -226,7 +218,6 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
 /* ********************    section Text ___ Every    ********** */
 /* *** Vorsicht  section_textAreYouReady bekommt gleichen Style */
 .section_textEvery {
-  background-color: orange;
   display: felx;
   flex-wrap: wrap;
   align-items: center;
@@ -234,7 +225,6 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
   padding: 3vh 3vw;
 }
 .section_textEvery article {
-  background-color: aqua;
   text-align: center;
   margin-bottom: 2vh;
   /*  2vh Abstand nach unten zu p */
@@ -243,11 +233,9 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
 
 /* ********************    section h2 ___ After    ********** */
 .section_h2After {
-  background-color: red;
   padding: 2vh;
 }
 .section_h2After h2 {
-  background-color: aqua;
   text-align: center;
   margin: 0 auto 2vh;
   /* Mittig und 2vh nach unten  */
@@ -255,7 +243,6 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
 
 /* ********************    section 4er Block alternativ Grid    ********** */
 .section_vierErBlockAlternativGrid {
-  background-color: orange;
   display: flex;
   flex-wrap: wrap;
   /* * wrap for Mobile in Desktop  = nowrap */
@@ -264,18 +251,13 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
   /* ***************    section 4er B ___  1  te links oben    ********** */
 }
 .section_vierErBlockAlternativGrid section {
-  background-color: aqua;
   padding: 3vh;
   /* * Abstand oben unten links rechts 3vh  */
   display: block;
   /* Vorsicht bei flex verschwinden Icons */
 }
 .section_vierErBlockAlternativGrid section article:nth-of-type(1) {
-  background-color: red;
   /* * Icons  */
-}
-.section_vierErBlockAlternativGrid section article:nth-of-type(2) {
-  background-color: yellow;
 }
 .section_vierErBlockAlternativGrid section article:nth-of-type(2) h4 {
   margin: 1vh 0;
@@ -284,14 +266,12 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
 
 /* ********************    section Text ___ Are you ready    ********** */
 .section_textAreYouReady {
-  background-color: red;
   padding: 5vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .section_textAreYouReady h2 {
-  background-color: aqua;
   text-align: center;
   margin: 0 auto 2vh;
   /* Mittig und 2vh nach unten  */
@@ -299,7 +279,6 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
 
 /* ********************    section Block 01 bis 04    ********** */
 .section_block01bis04 {
-  background-color: orange;
   display: flex;
   /* * richtet 01 bis 04 im flex aus */
   flex-wrap: wrap;
@@ -312,7 +291,6 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
   /* ********************    section 01 von 04 Rakete  Bild Text  ___ order    ********** */
 }
 .section_block01bis04 section {
-  background-color: yellow;
   display: block;
   /*  * Bei Deskop umstellen - 
    richtet Bilder und Text aus */
@@ -320,19 +298,16 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
   /* *******   01-04 usw + icon */
 }
 .section_block01bis04 section > article:nth-of-type(1) {
-  background-color: aqua;
   order: 1;
   /* * Order wird für Desktop gebraucht, 
   da soll ja Bild text Reihenfolge bei jedem ten wechseln */
   /* *  die > bei img und article werden gebraucht, das die icons nicht mit angesprochen werden */
 }
 .section_block01bis04 section > article:nth-of-type(1) > img {
-  background-color: yellowgreen;
   max-width: 100%;
   /* * hebt default einstellung von oben auf  */
 }
 .section_block01bis04 section > article:nth-of-type(2) {
-  background-color: violet;
   order: 1;
   /* * evtl. dann einfach class order im
   html direkt vergeben ;-) bevor man 
@@ -343,16 +318,11 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
   /* ***** text */
 }
 .section_block01bis04 section > article:nth-of-type(2) > article:nth-of-type(1) {
-  background-color: yellow;
   display: flex;
   justify-content: space-around;
   font-size: 2rem;
 }
-.section_block01bis04 section > article:nth-of-type(2) > article:nth-of-type(2) {
-  background-color: yellowgreen;
-}
 .section_block01bis04 section > article:nth-of-type(2) > article:nth-of-type(2) h4 {
-  background-color: orange;
   margin-top: 2vh;
   /* * Abstand zu Nummer 01 nach oben */
   margin-bottom: 2vh;
@@ -364,7 +334,6 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
 /* ************************** footer ************************ */
 /* ************************** footer ************************ */
 footer {
-  background-color: red;
   text-align: center;
   padding-top: 3vh;
   /* *Abstand zu Main */
@@ -373,14 +342,12 @@ footer {
   /* ******* Herz + Text */
 }
 footer p {
-  background-color: aqua;
   margin-top: 1vh;
   /*  * Abstand zu h2 drüber */
   margin-bottom: 2vh;
   /* * Abstand zu Buttons drunter */
 }
 footer form {
-  background-color: violet;
   display: flex;
   /* * dadurch Text bzw. Buttons mittig übereinander */
   flex-wrap: wrap;
@@ -394,7 +361,6 @@ footer form {
   /* ***** input */
 }
 footer > article:nth-of-type(2) {
-  background-color: orange;
   display: flex;
   /* * damit Herz hinten */
   width: 50%;
@@ -402,11 +368,9 @@ footer > article:nth-of-type(2) {
   align-items: center;
 }
 footer > article:nth-of-type(2) p {
-  background-color: yellow;
   font-size: 0.55rem;
 }
 footer > article:nth-of-type(2) > img {
-  background-color: greenyellow;
   max-width: 20px;
   object-fit: scale-down;
   /* * damit Icon klein ohne Verzerrung wird */
@@ -426,7 +390,6 @@ footer > article:nth-of-type(2) > img {
     display: flex;
   }
   header section:nth-of-type(1) {
-    background-color: rgb(182, 69, 69);
     display: flex;
     flex-direction: column;
     /* alles in Spalten ausrichten und nicht nebeneinander */
@@ -438,7 +401,6 @@ footer > article:nth-of-type(2) > img {
   }
   /* ************************* Text links oben ___ mit Elefant ******** */
   header section:nth-of-type(1) > article:nth-of-type(1) article {
-    background-color: rgb(229, 229, 167);
     padding-left: 2.5vw;
     /* * Abstand zu icon Elefant */
   }
@@ -449,7 +411,6 @@ footer > article:nth-of-type(2) > img {
     font-size: clamp(0.6rem, 10vw, 0.9rem);
   }
   #img_Elefant___sticky {
-    background-color: rgb(206, 170, 105);
     position: fixed;
     top: 26px;
     width: 230px;
@@ -457,7 +418,6 @@ footer > article:nth-of-type(2) > img {
   }
   /* ************************ Text links unten ___ mit h1   ******** */
   header section:nth-of-type(1) > article:nth-of-type(2) {
-    background-color: rgb(231, 231, 135);
     height: 60vh;
     padding-left: 5vw;
     text-align: left;
@@ -501,7 +461,6 @@ footer > article:nth-of-type(2) > img {
   /* ********************    section Text ___ Every    ********** */
   /* *** Vorsicht  section_textAreYouReady bekommt gleichen Style */
   .section_textEvery {
-    background-color: rgb(227, 193, 130);
     display: flex;
     align-items: flex-start;
     /* * oben bündig */
@@ -514,7 +473,6 @@ footer > article:nth-of-type(2) > img {
     padding: 15vh 3vw 8vh;
   }
   .section_textEvery article {
-    background-color: rgb(8, 94, 94);
     width: 18vw;
     font-size: clamp(1.5rem, 10vw, 2.5rem);
     text-align: left;
@@ -560,7 +518,6 @@ footer > article:nth-of-type(2) > img {
                         * Abstand erhöht */
   }
   .section_textAreYouReady p {
-    background-color: yellow;
     width: 51%;
     letter-spacing: 1px;
     /* * damit Text 3 Zeilig wird und breiter */
@@ -568,11 +525,9 @@ footer > article:nth-of-type(2) > img {
   }
   /* ********************    section Block 01 bis 04    ********** */
   .section_block01bis04 {
-    background-color: rgb(229, 199, 144);
     /* ********************    section 01 von 04 Rakete  Bild Text  ___ order    ********** */
   }
   .section_block01bis04 section {
-    background-color: rgb(172, 172, 75);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -584,14 +539,9 @@ footer > article:nth-of-type(2) > img {
     /* *******   01-04 usw + icon */
   }
   .section_block01bis04 section > article:nth-of-type(1) {
-    background-color: rgb(24, 110, 110);
     width: 30%;
   }
-  .section_block01bis04 section > article:nth-of-type(1) > img {
-    background-color: yellowgreen;
-  }
   .section_block01bis04 section > article:nth-of-type(2) {
-    background-color: rgb(220, 17, 220);
     width: 50%;
     text-align: left;
     display: flex;
@@ -601,7 +551,6 @@ footer > article:nth-of-type(2) > img {
     /* ***** text */
   }
   .section_block01bis04 section > article:nth-of-type(2) > article:nth-of-type(1) {
-    background-color: yellow;
     display: flex;
     flex-direction: column;
     /* * damit 01 über Zahl steht und von Zeile in Spalten Ausrichtung geht */
@@ -609,22 +558,14 @@ footer > article:nth-of-type(2) > img {
     /* * damit jetzt abstand zwischen 01 und Augen entsteht */
     width: 100%;
   }
-  .section_block01bis04 section > article:nth-of-type(2) > article:nth-of-type(1) h3 {
-    background-color: red;
-  }
   .section_block01bis04 section > article:nth-of-type(2) > article:nth-of-type(1) img {
-    background-color: greenyellow;
     max-width: 6%;
     /* * Damit Augen größer werden */
   }
   .section_block01bis04 section > article:nth-of-type(2) > article:nth-of-type(2) {
-    background-color: yellowgreen;
     line-height: 1.6;
     width: 80%;
     /* Damit p Text 4 Zeilig wird */
-  }
-  .section_block01bis04 section > article:nth-of-type(2) > article:nth-of-type(2) h4 {
-    background-color: orange;
   }
   /* *************** 01 bis 04 Bilder Order verändern ******* */
   /* ********** jedes zweite umgedreht, das Text zuerst */
@@ -644,17 +585,14 @@ footer > article:nth-of-type(2) > img {
     /* * damit Text breiter als h2 Text wirkt */
   }
   footer form {
-    background-color: lightcoral;
     flex-direction: column;
     /* ***** input */
   }
   .input_email {
-    background-color: yellow;
     width: 100%;
     padding-bottom: 2vh;
   }
   .button_submit {
-    background-color: aqua;
     width: 100%;
   }
   .button_allgemein___style {
