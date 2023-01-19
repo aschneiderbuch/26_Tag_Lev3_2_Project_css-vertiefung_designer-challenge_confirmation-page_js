@@ -156,7 +156,7 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
   max-width: 100%;
 }
 
-/* ******************* Animiation */
+/* ******************* Animiation *************** */
 .dorchsichtig {
   opacity: 0.5;
   /* * durchsichtig machen */
@@ -226,11 +226,10 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
 /* *** Vorsicht  section_textAreYouReady bekommt gleichen Style */
 .section_textEvery {
   background-color: orange;
-  display: block;
-  padding-top: 3vh;
-  padding-bottom: 3vh;
-  padding-left: 3vw;
-  padding-right: 2vw;
+  display: felx;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3vh 3vw;
 }
 .section_textEvery article {
   background-color: aqua;

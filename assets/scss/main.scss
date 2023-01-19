@@ -199,7 +199,7 @@ header {
     max-width: 100%;
 }
 
-/* ******************* Animiation */
+/* ******************* Animiation *************** */
 .dorchsichtig {
     opacity: 0.5;
     /* * durchsichtig machen */
@@ -210,8 +210,8 @@ header {
     scale: 0.5;
     /* * wird eingezoomt beim fallen */
     filter: hue-rotate(0deg);
-        /* * wird Bild wird rot gefärtb */
-      animation: einblenden 6s infinite;
+    /* * wird Bild wird rot gefärtb */
+    animation: einblenden 6s infinite;
 
 }
 
@@ -288,12 +288,12 @@ header {
 /* *** Vorsicht  section_textAreYouReady bekommt gleichen Style */
 .section_textEvery {
     background-color: orange;
-    display: block;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    padding-left: 3vw;
-    padding-right: 2vw;
+    display: felx;
+    flex-wrap: wrap;
+    align-items: center;
 
+
+ padding: 3vh 3vw;
 
     article {
         background-color: aqua;
@@ -625,16 +625,19 @@ footer {
     }
 
     /* ******************* Animiation */
-.dorchsichtig{
-    transform: translateY(-0px);
+    .dorchsichtig {
+        transform: translateY(-0px);
 
-}
-    
+    }
+
     @keyframes ein {
         from {
-             transform: translateY(100px);
+            transform: translateY(100px);
+        }
     }
-    }
+
+
+
 
 
 
