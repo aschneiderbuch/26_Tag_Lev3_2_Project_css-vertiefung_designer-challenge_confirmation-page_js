@@ -134,7 +134,6 @@ header section:nth-of-type(1) > article:nth-of-type(2) p {
   margin-right: 2vw;
 }
 header section:nth-of-type(2) {
-  background-color: orange;
   margin-top: 5vh;
   /* * Mobile  Abstand nach oben zu p */
   max-width: 100%;
@@ -142,19 +141,47 @@ header section:nth-of-type(2) {
   justify-content: center;
   align-items: center;
 }
-header section:nth-of-type(2) img {
+header section:nth-of-type(2) .img_Woken___backgroundImage {
   background-image: url("/assets/img/ilustracion1_wolke.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 100%;
-  /* * 100% oder in Mobile 340px max-width */
-  /*             Animation
-             transform: translateY(-100px);
-             transition: 2s ease-in ;
-  */
+}
+header section:nth-of-type(2) .img_Woken___backgroundImage img {
+  max-width: 100%;
 }
 
+#animation___fallen {
+  max-width: 100%;
+}
+
+.dorchsichtig { /* * durchsichtig machen */
+  opacity: 0.5;
+  transform: translateY(-500px);
+  rotate: 0deg;
+  scale: 0.5;
+  animation: einblenden 6s infinite;
+}
+
+@keyframes einblenden {
+  from {
+    opacity: 0;
+    transform: translateY(-300px);
+    rotate: 0deg;
+    scale: 0.3;
+  }
+  50% {
+    scale: 2;
+    filter: hue-rotate(190deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+    rotate: 720deg;
+    scale: 1.2;
+  }
+}
 #img_Elefant___sticky {
   background-color: orange;
   position: fixed;
@@ -432,7 +459,6 @@ footer article:nth-of-type(2) > img {
   }
   /* ************************ 2x Bilder Überblenden ___ Wolke + people ***** */
   header section:nth-of-type(2) {
-    background-color: rgb(161, 112, 21);
     margin-top: 0vh;
     max-width: 60%;
   }
