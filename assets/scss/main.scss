@@ -501,8 +501,8 @@ footer {
 
         /* ***** input */
 
-        }
-    
+    }
+
 
     /* ******* Herz + Text */
     >article:nth-of-type(2) {
@@ -879,40 +879,43 @@ footer {
             background-color: lightcoral;
             flex-direction: column;
 
-     /* ***** input */
-            }
+            /* ***** input */
+        }
     }
 
-.input_email{
-    background-color: yellow;
-    width: 100%;
-    padding-bottom: 2vh;}
-    
+    .input_email {
+        background-color: yellow;
+        width: 100%;
+        padding-bottom: 2vh;
+    }
 
-.button_submit{
-    background-color: aqua;
-    width: 100%;
+
+    .button_submit {
+        background-color: aqua;
+        width: 100%;
+    }
+
+
+    .button_allgemein___style {
+        width: 10vw;
+        text-align: center;
+        padding: 1vh;
+        border-radius: 10px;
+        border-color: $farbe___grau;
+    }
+
+    .button_input___style {
+        letter-spacing: 1px;
+    }
+
+    .button_submit___style {
+        background-color: $farbe___rot;
+        color: $farbe___weiß;
+
+    }
+
+footer     >article:nth-of-type(2) {
 }
-
-
-.button_allgemein___style{
-    width: 10vw;
-    text-align: center;
-    padding: 1vh;
-    border-radius: 10px;
-    border-color: $farbe___grau;
-}
-
-.button_input___style{
-letter-spacing: 1px;
-}
-
-.button_submit___style{
-    background-color:  $farbe___rot;
-    color:$farbe___weiß;
-
-}
-
 
 
 
