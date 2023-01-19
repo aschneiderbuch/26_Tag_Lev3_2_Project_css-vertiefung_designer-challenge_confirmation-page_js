@@ -142,6 +142,10 @@ header {
             }
         }
 
+
+
+    
+
         /* ************************ Text links unten ___ mit h1   ******** */
         >article:nth-of-type(2) {
             padding-top: 5vh;
@@ -520,14 +524,49 @@ footer {
     }
 }
 
+        /* *********************** animation bei jedem icon bzw. .img_icon:hover ;-p ********************* */
 
 
+img:hover {
+    animation: elefantBewegungsAnimation 2s ease-in-out;
 
+}
+
+        .animationElefant{
+            scale: 1;
+            color:red;
+            animation: elefantBewegungsAnimation 5s ease-in-out;
+        }
+
+        @keyframes elefantBewegungsAnimation {
+            from{
+                scale: 0.8;
+                color: red;
+            }
+
+            50%{
+                scale: 1.4;
+                color: greenyellow;
+            }
+
+            to{
+                scale: 1;
+                color: green;
+            }
+            
+        }
 
 
 /* ************************** media querrie ************************ */
 /* ************************** media querrie ************************ */
 /* ************************** media querrie ************************ */
+/* ************************** media querrie ************************ */
+/* ************************** media querrie ************************ */
+/* ************************** media querrie ************************ */
+/* ************************** media querrie ************************ */
+/* ************************** media querrie ************************ */
+/* ************************** media querrie ************************ */
+
 
 @media only screen and (min-width: 1440px) {
 
