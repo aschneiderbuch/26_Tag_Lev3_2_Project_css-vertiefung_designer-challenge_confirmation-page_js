@@ -37,6 +37,7 @@ body {
   /*  * wegen Mobile First */
   font-size: 16px;
   scroll-behavior: smooth;
+  overflow-x: hidden; /* * verhindert den Horizontalscrol bei Bild Vergrößerungs Animationen */
 }
 
 /* ********************** Schriften und Farben  vordefinieren ************ */
@@ -407,10 +408,12 @@ footer > article:nth-of-type(2) > img {
 
 /* *********************** animation bei jedem icon bzw. .img_icon:hover ;-p ********************* */
 img:hover {
+  overflow: hidden;
   animation: elefantBewegungsAnimation 2s ease-in-out;
 }
 
 .animationElefant {
+  overflow: hidden;
   scale: 1;
   animation: elefantBewegungsAnimation 5s ease-in-out;
 }
@@ -421,6 +424,7 @@ img:hover {
   }
   50% {
     scale: 2;
+    overflow: hidden;
   }
   to {
     scale: 1;
