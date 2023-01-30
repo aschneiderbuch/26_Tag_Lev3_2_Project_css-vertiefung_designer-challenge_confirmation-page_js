@@ -167,7 +167,28 @@ header section:nth-of-type(2) .img_Woken___backgroundImage img {
   /* * wird eingezoomt beim fallen */
   filter: hue-rotate(0deg);
   /* * wird Bild wird rot gefärtb */
-  animation: einblenden 6s infinite;
+  -webkit-animation: einblenden 6s infinite;
+          animation: einblenden 6s infinite;
+}
+
+@-webkit-keyframes einblenden {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+    rotate: 10deg;
+    scale: 0.3;
+  }
+  50% {
+    scale: 2;
+    filter: hue-rotate(190deg);
+    rotate: 320deg;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+    rotate: 360deg;
+    scale: 1.2;
+  }
 }
 
 @keyframes einblenden {
@@ -400,7 +421,8 @@ footer > article:nth-of-type(2) p {
 }
 footer > article:nth-of-type(2) > img {
   max-width: 20px;
-  object-fit: scale-down;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
   /* * damit Icon klein ohne Verzerrung wird */
   margin-top: -1vh;
   /* * damit Herz auf einer Linie mit p */
@@ -409,13 +431,28 @@ footer > article:nth-of-type(2) > img {
 /* *********************** animation bei jedem icon bzw. .img_icon:hover ;-p ********************* */
 img:hover {
   overflow: hidden;
-  animation: elefantBewegungsAnimation 2s ease-in-out;
+  -webkit-animation: elefantBewegungsAnimation 2s ease-in-out;
+          animation: elefantBewegungsAnimation 2s ease-in-out;
 }
 
 .animationElefant {
   overflow: hidden;
   scale: 1;
-  animation: elefantBewegungsAnimation 5s ease-in-out;
+  -webkit-animation: elefantBewegungsAnimation 5s ease-in-out;
+          animation: elefantBewegungsAnimation 5s ease-in-out;
+}
+
+@-webkit-keyframes elefantBewegungsAnimation {
+  from {
+    scale: 1;
+  }
+  50% {
+    scale: 2;
+    overflow: hidden;
+  }
+  to {
+    scale: 1;
+  }
 }
 
 @keyframes elefantBewegungsAnimation {
@@ -441,7 +478,7 @@ img:hover {
 /* ************************** media querrie ************************ */
 @media only screen and (min-width: 1440px) {
   html,
-  body {
+body {
     max-width: 1440px;
   }
   header {
@@ -499,6 +536,11 @@ img:hover {
   .dorchsichtig {
     transform: translateY(0px);
   }
+  @-webkit-keyframes ein {
+    from {
+      transform: translateY(100px);
+    }
+  }
   @keyframes ein {
     from {
       transform: translateY(100px);
@@ -524,7 +566,8 @@ img:hover {
     /* * oben bündig */
     justify-content: center;
     /* * zusamme  */
-    column-gap: 5vw;
+    -moz-column-gap: 5vw;
+         column-gap: 5vw;
     /* * spaltenbreite in der Mitte */
     flex-wrap: nowrap;
     /* * kein umbruch in Deskotp */
@@ -589,7 +632,8 @@ img:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 3vw;
+    -moz-column-gap: 3vw;
+         column-gap: 3vw;
     /* * Abstand Spalte Bild Text */
     padding-bottom: 10vh;
     /* * Abstand zur nächsten Bild Text Reihe */
@@ -669,6 +713,4 @@ img:hover {
     justify-content: center;
   }
   /* **** Ende */
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */
